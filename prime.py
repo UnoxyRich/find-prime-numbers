@@ -28,7 +28,7 @@ def segmented_sieve(low, high):
         range_primes[0] = False
 
     return [num for num, is_prime in enumerate(range_primes, low) if is_prime]
-
+#Last step: Select Range
 low = 10**8
 high = 10**9
 primes_in_range = segmented_sieve(low, high)
